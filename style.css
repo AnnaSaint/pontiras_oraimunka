@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: gray url(hatterem3.jpg) repeat;
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tarolo {
+  background-color: #5e5d5d;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  background-color: #494949;
+}
+
+.menu li {
+  padding: 10px;
+  text-align: center;
+  border: 1px grey dotted;
+}
+
+.menu li:hover {
+  background-color: #858585;
+  cursor: pointer;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.menu li:hover a {
+  color: rgb(37, 37, 37);
+}
+
+img {
+  margin: 10px;
+  padding: 1px;
+  border: 3px gray dotted;
+}
+
+h1 {
+  margin: 10px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: calc(28px - 0.1vw);
+  border-bottom: 3px gray dotted;
+}
+
+h2 {
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+  text-align: justify;
+}
+
+img.right {
+  float: right;
+}
+
+img.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+/*ALOLDAL*/
+
+.felsorolas ol {
+  padding: 10px;
+  text-align: justify;
+  list-style-position: inside;
+}
+
+.felsorolas ol li {
+  padding: 5px 0;
+}
+
+.kepgaleria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 20px;
+}
+
+.kepek {
+  padding: 5px;
+}
+
+.kepek img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    margin: 0px;
+  }
+
+  img.left {
+    float: none;
+  }
+
+  img.right {
+    float: none;
+  }
+
+  .menu ul {
+    grid-template-columns: 1fr;
+  }
+
+  .kepgaleria {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .kepgaleria {
+    grid-template-columns: 1fr 1fr;
+  }
+}
